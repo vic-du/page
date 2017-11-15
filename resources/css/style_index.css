@@ -1,0 +1,228 @@
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1; /*For IE 6&7 only*/
+}
+
+body { font-family: "微軟正黑體", sans-serif;  }
+
+html, body { height: 100%; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.wrapper{
+  min-height: 100%;
+  position: relative;
+  background-image: url("../../resources/img/bg-index.png") ;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+/* ----- 分享 ----- */
+.share{
+  width: 100%;
+  padding-top: 10px; 
+  text-align: right;
+}
+.share img{
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.kv_line img{ width: 28px;}
+.share-mobile{ display: none; }
+
+.google-btn{ 
+  display: none;
+  background-image: url("../../resources/img/icon-google.png") ; 
+}
+
+/* ----- LOGO ----- */
+.logo{
+  width: 100%;
+  text-align: center;
+  color: #2d1f11;
+}
+.logo img{
+  width: 430px;
+  margin-bottom: 10px;
+  margin-top: 10px; 
+}
+.logo span{ 
+  letter-spacing: 0.5px;
+  font-size: 24px;
+  padding: 0 10px;
+}
+.logo-word{ 
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+/* ----- 選擇部落 ----- */
+.choose{
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.choose select{
+  appearance:none;/*清除默認樣式*/
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  width: 300px;
+  height: 46px;
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+  padding: 0px 22px;
+  display: block;
+  margin-top: 14px;
+  cursor: pointer;
+  font-family: "微軟正黑體", sans-serif;
+
+  background: #e95400;
+  background: url("../../resources/img/icon-select.png") no-repeat 92% center,-moz-linear-gradient(left, #e95400 55%, #f77f16 100%);
+  background: url("../../resources/img/icon-select.png") no-repeat 92% center,-webkit-linear-gradient(left, #e95400 55%,#f77f16 100%);
+  background: url("../../resources/img/icon-select.png") no-repeat 92% center,linear-gradient(to right, #e95400 55%,#f77f16 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e95400', endColorstr='#f77f16',GradientType=1 );
+}
+select::-ms-expand { display: none; }/*清除IE默認樣式*/
+.choose button{
+  appearance:none;/*清除默認樣式*/
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  width: ;
+  height: 46px;
+  border: 0;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 14px;
+  padding: 0 32px;
+  cursor: pointer;
+  font-family: "微軟正黑體", sans-serif;
+
+  background: #e95400;
+  background: -moz-linear-gradient(left, #e95400 55%, #f77f16 100%);
+  background: -webkit-linear-gradient(left, #e95400 55%,#f77f16 100%);
+  background: linear-gradient(to right, #e95400 55%,#f77f16 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e95400', endColorstr='#f77f16',GradientType=1 );
+}
+.choose option{ 
+  background: #fff;
+  color: #000;
+  font-family: "微軟正黑體", sans-serif;
+  line-height: 30px;
+  height: 30px;
+}
+.choose button img{ 
+  height: 32%;
+  vertical-align: baseline;
+  margin-right: 5px;
+}
+.sent{
+  width: 100px;
+  padding: 0; 
+}
+.choose-off{ 
+  color: rgba(255,255,255,0.6) !important;
+  opacity:0.15;
+}
+
+/* ----- 頁尾 ----- */
+.footer{
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  background: url("../../resources/img/footer-bg.png") repeat-x 0% 100% ;
+  background-size: auto 100%;
+
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer img{
+  vertical-align: text-bottom;
+  margin-right: 4px;
+}
+
+/* ----- 404 ----- */
+.logo-404 {
+  width: 300px;
+  margin: 0 auto;
+}
+.logo-404 img{
+  width: 300px;
+  margin-top: 20px; 
+  margin-left: 20px;
+}
+.content-404{
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.4em;
+  text-align: center;
+  margin-top: 50px;
+}
+.button-404{
+  appearance:none;/*清除默認樣式*/
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  width: ;
+  height: 46px;
+  border: 0;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 14px;
+  padding: 0 32px;
+  cursor: pointer;
+  font-family: "微軟正黑體", sans-serif;
+
+  background: #e95400;
+  background: -moz-linear-gradient(left, #e95400 55%, #f77f16 100%);
+  background: -webkit-linear-gradient(left, #e95400 55%,#f77f16 100%);
+  background: linear-gradient(to right, #e95400 55%,#f77f16 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e95400', endColorstr='#f77f16',GradientType=1 );
+}
+
+/* ----- googlemap ----- */
+.gps-close{
+  width: 380px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -190px; 
+  z-index: 999;
+  height: 60px;
+  line-height: 60px;
+  font-family: "微軟正黑體", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+}
+.gps-right a{
+  color: #4A90E2;
+  text-decoration: none;
+}
+.gps-left{ 
+  float: left;
+  padding-left: 20px;
+}
+.gps-right{ float: right; }
+.gps-right span{
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+.gps-right span a { color: #999; }

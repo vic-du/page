@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+
+<title>iStop地圖情報站</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+
+<!-- 社群分享設定  -->
+<meta property="og:title" content="iStop地圖情報站" />
+<meta property="og:description" content="提供原鄉部落i-Tribe免費wifi位置訊息及其他部落設施資訊，趕快來試試看吧!" />
+<meta property="og:url" content="http://demo.www.zhe.tw/annie/istop/index.html" />
+<meta property="og:image" content="http://demo.www.zhe.tw/annie/istop/resources/img/share.png" />
+    
+<!-- 首頁CSS -->
+<link rel="stylesheet" type="text/css" href="resources/css/style_index.css">
+<link rel="stylesheet" type="text/css" href="resources/css/style_index_queries.css">
+
+<!-- 手機分享 -->
+<link rel="stylesheet" type="text/css" href="resources/css/style_share.css">
+
+</head>
+<body> 
+
+<div class="wrapper">
+    <div class="share">
+    分享：
+
+    <!-- FB分享 -->
+    <a href="http://www.facebook.com/share.php?u=http://demo.www.zhe.tw/annie/istop/index.html" target="_blank"><img src="resources/img/icon-fb.png" style="width: 8px; height: 18px;"></a>
+
+    <!-- Line分享 -->
+    <span class="kv_line">
+      <script>
+      //<![CDATA[
+      (function() {
+      var img = "resources/img/icon-line.png", // line 按鈕圖示
+      title = document.title,
+      url = "http://" + location.hostname + location.pathname,
+      href, html;
+
+      // 行動裝置語法
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      href = "http://line.naver.jp/R/msg/text/?" + title + "%0D%0A" + url;
+      } else {
+      // 網頁版語法
+      href = "https://lineit.line.me/share/ui?url=" + encodeURIComponent(url);
+      }
+      html = "<a href='" + href + "' target='_blank'><img src='" + img + "'/></a>";
+      document.write(html);
+      })();
+      //]]>
+      </script>
+    </span>
+  
+    <!-- google+分享 -->
+    <a href="javascript: void(window.open('https://plus.google.com/share?url='.concat(encodeURIComponent(location.href)), '', ''));"><img src="resources/img/icon-google.png" style="width: 18px; height: 18px;"/></a>
+
+  </div>
+
+    <!-- 手機分享 -->
+    <div class="share-mobile">
+      <div class="social_share">
+        <input type="checkbox" id="social_share" name="social_share" />
+          <div class="social_share__inner_wrap">
+            <label for="social_share" class="social_share__label">
+              <img src="resources/img/icon-share.png">
+            </label>
+
+            <!-- FB分享 -->
+            <a href="http://www.facebook.com/share.php?u=http://demo.www.zhe.tw/annie/istop/index.html" target="_blank"><img src="resources/img/icon-fb.png" style="width: 8px; height: 18px;"></a>
+
+            <!-- Line分享 -->
+            <span class="kv_line">
+              <script>
+              //<![CDATA[
+              (function() {
+              var img = "resources/img/icon-line.png", // line 按鈕圖示
+              title = document.title,
+              url = "http://" + location.hostname + location.pathname,
+              href, html;
+
+              // 行動裝置語法
+              if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+              href = "http://line.naver.jp/R/msg/text/?" + title + "%0D%0A" + url;
+              } else {
+              // 網頁版語法
+              href = "https://lineit.line.me/share/ui?url=" + encodeURIComponent(url);
+              }
+              html = "<a href='" + href + "' target='_blank'><img src='" + img + "'/></a>";
+              document.write(html);
+              })();
+              //]]>
+              </script>
+            </span>
+            
+            <!-- google+分享 -->
+            <a href="javascript: void(window.open('https://plus.google.com/share?url='.concat(encodeURIComponent(location.href)), '', ''));"><img src="resources/img/icon-google.png" style="width: 18px; height: 18px;"/></a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="logo">
+        <img src="resources/img/logo.png"><!--br-->
+        <!--img src="resources/img/logo-text.png"><br>
+        <span>i-Tribe愛部落WIFI熱點</span><span>戶外免費上網</span-->
+        <p class="logo-word">建構原住民族地區 無線寬頻環境計畫</p>
+    </div>
+    <div class="choose">
+        <select>
+          <option value="">請選擇縣市</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <select class="choose-off">
+          <option value="">請選擇鄉鎮</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <select class="choose-off">
+          <option value="">請選擇部落</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <button type="button" class="sent choose-off">送出</button>
+        <button type="button"><img src="resources/img/icon-gps.png">離我最近的部落</button>
+    </div>
+    <div class="footer"><img src="resources/img/footer-logo.png">原住民族委員會版權所有 © All right reserved.</div>
+</div>
+
+<div class="gps-close clearfix" style="display: none;">
+  <div class="gps-left">Google地圖無權使用你的位置。</div>
+  <div class="gps-right"><a href="#" target="_blank">瞭解詳情</a><span><a href="#">X</a></span></div>
+</div>
+
+</body>  
+</html>

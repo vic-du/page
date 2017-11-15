@@ -1,0 +1,129 @@
+/* ============================================================ */
+/* Small tablet to big tablet: from 769px to 1024px */
+/* ============================================================ */
+@media only screen and (max-width: 1024px) {
+    
+    /* ----- 小項目的分段註解 ----- */
+    
+}
+
+
+/* ============================================================ */
+/* Small phones to small tablets: from 601px to 768px */
+/* ============================================================ */
+@media only screen and (max-width: 768px) {
+    
+    /* ----- 小項目的分段註解 ----- */
+    
+}
+
+
+/* ============================================================ */
+/* Small phones: from 481 to 600px */
+/* ============================================================ */
+@media only screen and (max-width: 600px) {
+    
+/* ----- 分享 ----- */
+.share{ display: none; }
+.share-mobile{ 
+  display: block;
+  width: 95%;
+  text-align: right;
+  padding: 16px 0 5px 0;
+}
+.social_share__label img {
+  width: 22px;
+  height: 22px;
+}
+.share-mobile-image img{  }
+/* ----- LOGO ----- */
+.logo{
+  width: 100%;
+  text-align: center;
+  color: #2d1f11;
+}
+.logo img{
+  max-width: 85%;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+.logo span{
+  letter-spacing: 0px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.logo-word{ 
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+}
+    
+}
+
+
+/* ============================================================ */
+/* Small phones: from 0 to 480px */
+/* ============================================================ */
+@media only screen and (max-width: 480px) {
+    
+/* ----- 404 ----- */
+.logo-404 {
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.logo-404 img{
+  width: 100%;
+  margin-top: 20px; 
+  margin-left: 5%;
+}
+.gps-close{ 
+  width: 100%;
+  left: 0%;
+  margin-left: 0px; 
+}
+.gps-left{ padding-left: 3%; }
+
+/* ----- 頁尾 ----- */
+.footer{ font-size: 13px; }
+
+}
+
+
+/* ============================================================ */
+/* 調整4吋手機，橫向時的畫面 */
+/* ============================================================ */
+@media only screen and (max-height: 480px) and (orientation:landscape) {
+    
+/* ----- 分享 ----- */
+.share{ display: none; }
+.share-mobile{ 
+  display: block;
+  width: 95%;
+  text-align: right;
+  padding: 16px 0 5px 0;
+}
+.share-mobile img {
+  width: 22px;
+  height: 22px;
+}
+
+/* ----- LOGO ----- */
+.logo{
+  width: 100%;
+  
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #2d1f11;
+}
+.logo img{
+  max-width: 85%;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+.logo span{ padding: 0 10px; }
+
+/* ----- 404 ----- */
+.content-404 { margin-top: 20px; }
+    
+}

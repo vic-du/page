@@ -1,0 +1,368 @@
+<html>
+<head>
+
+<title>iStop地圖情報站</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+
+<!-- 社群分享設定  -->
+<meta property="og:title" content="iStop地圖情報站" />
+<meta property="og:description" content="提供原鄉部落i-Tribe免費wifi位置訊息及其他部落設施資訊，趕快來試試看吧!" />
+<meta property="og:url" content="http://demo.www.zhe.tw/annie/istop/index.html" />
+<meta property="og:image" content="http://demo.www.zhe.tw/annie/istop/resources/img/share.png" />
+
+<!-- 基本CSS -->
+<link rel="stylesheet" type="text/css" href="resources/css/style_main.css">
+<link rel="stylesheet" type="text/css" href="resources/css/style_main_queries.css">
+
+<!-- 手機分享 -->
+<link rel="stylesheet" type="text/css" href="resources/css/style_share.css">
+
+<!-- 選擇部落 -->
+<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="vendors/css/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="vendors/css/slick/slick-theme.css">
+
+<!-- 地圖 Latest compiled and minified CSS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+<nav class="nav" role="navigation">
+	<div class="nav--section">
+		<!-- 收合展開 -->
+		<input type="checkbox" aria-hidden="true" id="toggle" class="hidden toggle">
+		<div class="nav--title">
+      <label for="toggle" class="nav--toggle">
+        	<span class="open nav--toggle-img"><img src="resources/img/icon-arrowclose.png"></span>
+        	<span class="closed nav--toggle-img"><img src="resources/img/icon-arrowopen.png"></span>
+      </label>
+    </div>
+		<!-- 主要內容 有back 開始-->
+    <!--div class="main nav--list">
+        <!-- 照片 -->
+        <!--div class="photo">
+          <div><a href="#"><img src="resources/img/icon-arrowback.png" class="photo-arrow"></a></div>
+          <img src="resources/img/sample-photo.jpg">
+        </div>
+        <div class="main-height">
+          <!-- 名稱 -->
+          <!--div class="name clearfix">
+            <span>魯巴卡茲部落</span><a href="#"><img src="resources/img/icon-plan.png"></a>
+          </div>
+          <!-- 介紹文 -->
+          <!--div class="intro">想要盡情體驗台東縣的精彩，魯巴卡茲民宿-富岡館絕對是您的最佳旅伴。這裡距離市中心僅5.7公里，離機場也不過20分鐘的路程。住宿位置優越讓旅客前往市區內的熱門景點變得方便快捷。</div>
+          <!-- 條列項目 -->
+          <!--div class="field">
+            <!-- (1) -->
+            <!--div class="field-item clearfix">
+              <div class="field-name">地址</div>
+              <div class="field-content">台東縣台東市吉林路二段543號</div>
+            </div>
+            <!-- (2) -->
+            <!--div class="field-item clearfix">
+              <div class="field-name">網址</div>
+              <div><a href="#">http://istop.itribe.com.tw</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER -->
+        <!--div class="main-footer">原住民族委員會版權所有 © All right reserved.</div>
+        </div>
+      </div>
+      <!-- 主要內容 有back 結束-->
+
+      <!-- 主要內容 沒有back 開始-->
+    <div class="main nav--list" style="display: none;">
+        <!-- 照片 -->
+        <div class="photo">
+          <img src="resources/img/sample-photo.jpg">
+        </div>
+        <div class="main-height">
+          <!-- 名稱 -->
+          <div class="name clearfix">
+            <span>瑞隆(卡拿吾部)、瑞源(舞鳳)文化聚會所</span><a href="#"><img src="resources/img/icon-plan.png"></a>
+          </div>
+          <!-- 介紹文 -->
+          <div class="intro">想要盡情體驗台東縣的精彩，魯巴卡茲民宿-富岡館絕對是您的最佳旅伴。這裡距離市中心僅5.7公里，離機場也不過20分鐘的路程。住宿位置優越讓旅客前往市區內的熱門景點變得方便快捷。</div>
+          <!-- 條列項目 -->
+          <div class="field">
+            <!-- (1) -->
+            <div class="field-item clearfix">
+              <div class="field-name">地址</div>
+              <div class="field-content">台東縣台東市吉林路二段543號台東縣台東市吉林路二段543號</div>
+            </div>
+            <!-- (2) -->
+            <div class="field-item clearfix">
+              <div class="field-name">網址</div>
+              <div><a href="#">http://istop.itribetwistopitribe.com.tw</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="main-footer">原住民族委員會版權所有 © All right reserved.</div>
+        </div>
+      </div>
+      <!-- 主要內容 沒有back 結束-->
+
+  </nav>
+
+
+<!-- HEADER -->
+<div class="header">
+  <div class="menu-svg"><img src="resources/img/header-menu.png"></div>
+  <div class="header-logo"><img src="resources/img/header-logo.png"></div>
+  <div class="header-share"><img src="resources/img/icon-share.png"></div>
+</div>
+
+<!-- mobile摘要 -->
+<!--div class="mobile-summary clearfix">
+  <div class="summary-main summary-noback">
+    <span>瑞隆(卡拿吾部)、瑞源(舞鳳)文化聚會所</span>
+    <a href="#"><img src="resources/img/icon-plan.png"></a>
+  </div>
+</div-->
+
+<!-- mobile摘要 有back -->
+<div class="mobile-summary clearfix">
+  <div class="summary-back"> < </div>
+  <div class="summary-main">
+    <span>瑞隆(卡拿吾部)、瑞源(舞鳳)文化聚會所</span>
+    <a href="#"><img src="resources/img/icon-plan.png"></a>
+  </div>
+</div>
+
+
+<!-- (1)主選單 -->
+<div class="menu-overlay" style="display: none;">
+  <div class="menu-plate">
+    <div class="menu-close">
+      <svg fill="#000000" height="40" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          <path d="M0 0h24v24H0z" fill="none"></path>
+      </svg>
+    </div>
+
+	<section class="web-navigation">
+      <div class="navigation-height">
+        <a href="#" class="nav-img1"><img src="resources/img/menu-tribe.png">選擇部落</a>
+        <a href="#" class="nav-img2"><img src="resources/img/menu-gps.png">篩選附近站點</a>
+        <a href="#" class="nav-img3"><img src="resources/img/menu-about.png">關於iStop地圖情報站</a>
+        <div class="navigation-cloud"></div>
+      </div>
+      <div class="main-footer">原住民族委員會版權所有 © All right reserved.</div>
+    </section>
+
+  </div>
+</div>
+
+    <!-- (2)選擇部落 -->
+    <div class="main-content" style="display: none;">
+
+    <div class="content-close">
+      <svg fill="#000000" height="40" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          <path d="M0 0h24v24H0z" fill="none"></path>
+      </svg>
+      <span>選擇部落</span>
+    </div>
+
+	  <!--div class="tribe">選擇部落</div-->
+    <div class="location">台東縣 > 太麻里鄉 > 魯巴卡茲部落</div>
+
+    <div class="tribe-height">
+
+
+  
+    <section class="regular">
+      <!--縣市-->
+      <div>
+        <ul>
+          <li>宜蘭縣</li>
+          <li>新北市</li>
+          <li class="tribe-select">桃園市</li>
+          <li>新竹縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>苗栗縣</li>
+          <li>新北市</li>
+        </ul>
+      </div>
+      <!--鄉鎮-->
+      <div>
+        <ul>
+          <li>達仁鄉</li>
+          <li>大武鄉</li>
+          <li>金峰鄉</li>
+          <li class="tribe-select">太麻里鄉</li>
+          <li>卑南鄉</li>
+        </ul>
+      </div>
+      <!--部落-->
+      <div>
+        <ul>
+          <li class="tribe-select">魯巴卡茲部落</li>
+          <li>吉拉龍噯部落</li>
+          <li>喳其格勒部落</li>
+          <li>沙薩拉克部落</li>
+        </ul>
+      </div>
+
+    </section>
+    </div>
+    <div><button class="tribe-sent">送出</button></div>
+
+    </div>
+
+
+    <!-- (3)篩選站點 -->
+    <div class="main-content" style="display: none;">
+
+    <div class="content-close">
+      <svg fill="#000000" height="40" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          <path d="M0 0h24v24H0z" fill="none"></path>
+      </svg>
+      <span>篩選附近站點</span>
+    </div>
+	
+  	<!--div class="station">篩選附近站點</div-->
+    <div class="station-height">
+      <section class="station-select">
+        <input type="checkbox" id="wifi" class="station-wifi" name="">
+        <label for="wifi">WiFi</label>
+
+        <input type="checkbox" id="government" class="station-government" name="">
+        <label for="government">政府機關</label>
+
+        <input type="checkbox" id="police" class="station-police" name="">
+        <label for="police">警政機關</label>
+
+        <input type="checkbox" id="information" class="station-information" name="">
+        <label for="information">服務中心</label>
+
+        <input type="checkbox" id="office" class="station-office" name="">
+        <label for="office">活動中心</label>
+
+        <input type="checkbox" id="school" class="station-school" name="">
+        <label for="school">學校</label>
+
+        <input type="checkbox" id="religion" class="station-religion" name="">
+        <label for="religion">宗教場所</label>
+
+        <input type="checkbox" id="shop" class="station-shop" name="">
+        <label for="shop">商店</label>
+
+        <input type="checkbox" id="room" class="station-room" name="">
+        <label for="room">住宿點</label>
+
+        <input type="checkbox" id="view" class="station-view" name="">
+        <label for="view">秘境景點</label>
+
+        <input type="checkbox" id="park" class="station-park" name="">
+        <label for="park">公共設施</label>
+
+        <input type="checkbox" id="health" class="station-health" name="">
+        <label for="health">文化健康站</label>
+
+        <input type="checkbox" id="other" class="station-other" name="">
+        <label for="other">其他</label>
+
+      </section>
+    </div>   
+  	<div class="station-btn"><button class="station-clean">重選</button><button class="station-sent">送出</button></div>
+    
+    </div>
+
+
+    <!-- (4)關於istop -->
+    <div class="main-content">
+
+    <div class="content-close">
+      <svg fill="#000000" height="40" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          <path d="M0 0h24v24H0z" fill="none"></path>
+      </svg>
+      <span>關於iStop地圖情報站</span>
+    </div>
+
+  <section class="about">
+      <!--div class="about-title">關於iStop地圖情報站</div-->
+      <div class="about-height">
+        <!-- 內文 -->
+        <div class="about-content">
+        iStop地圖情報站之網頁服務係為推廣原住民族委員會「i-Tribe愛部落無線寬頻」，使用者可使用iStop地圖情報站之地圖資訊找到愛部落無線WiFi站點位置，提升部落民眾對於無線網路的使用。
+        </div>
+
+        <div class="about-share">
+          <!-- FB分享 -->
+          <a href="http://www.facebook.com/share.php?u=http://demo.www.zhe.tw/annie/istop/index.html" target="_blank"><img src="resources/img/icon-fb.png" style="width: 12px; height: 27px;"></a>
+          <!-- Line分享 -->
+          <span class="kv_line">
+            <script>
+            //<![CDATA[
+            (function() {
+            var img = "resources/img/icon-line.png", // line 按鈕圖示
+            title = document.title,
+            url = "http://" + location.hostname + location.pathname,
+            href, html;
+            // 行動裝置語法
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            href = "http://line.naver.jp/R/msg/text/?" + title + "%0D%0A" + url;
+            } else {
+            // 網頁版語法
+            href = "https://lineit.line.me/share/ui?url=" + encodeURIComponent(url);
+            }
+            html = "<a href='" + href + "' target='_blank'><img src='" + img + "'/></a>";
+            document.write(html);
+            })();
+            //]]>
+            </script>
+          </span>
+          <!-- google+分享 -->
+          <a href="javascript: void(window.open('https://plus.google.com/share?url='.concat(encodeURIComponent(location.href)), '', ''));"><img src="resources/img/icon-google.png" style="width: 27px; height: 27px;"/></a>
+          <p><a href="http://www.taiwan-itribe.com.tw" target="_blank"><img src="resources/img/banner-itribe.png"></a></p>
+          <p><a href="http://www.apc.gov.tw" target="_blank"><img src="resources/img/banner-apc.png"></a></p>
+        </div>
+      </div>
+      <div class="main-footer">原住民族委員會版權所有 © All right reserved.</div>
+    </section>
+    </div>
+    <div class="bg-black" style="display: none;"></div>
+
+<!-- google map -->
+<div class="gps-close clearfix" style="display: none;">
+	<div class="gps-left">Google地圖無權使用你的位置。</div>
+	<div class="gps-right"><a href="#" target="_blank">瞭解詳情</a><span><a href="#">X</a></span></div>
+</div>
+<div class="googlemap">  
+  <div id="map"></div>
+  <div class="mylocation"><img src="resources/img/icon-mylocation.png"></div>
+  <div class="map-plusminus"><img src="resources/img/icon-mylocation-plus.png"><img src="resources/img/icon-mylocation-minus.png"></div>
+  <div class="mobile-mylocation"><img src="resources/img/icon-mylocation-mobile.png"></div>
+</div>
+
+
+<!-- ================================================ -->
+
+<!--#include file="inc/js_bottom.shtml"-->
+<!--#include file="inc/js_bottom_map.shtml"-->
+
+
+</body>  
+</html>

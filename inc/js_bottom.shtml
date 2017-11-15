@@ -1,0 +1,81 @@
+<script src="../vendors/js/jquery.min.js" language="javascript"></script>
+
+<!-- 展開收合 -->
+<script type="text/javascript">
+  $(function() {
+  menuToggle();
+});
+function menuToggle() {
+  $('.menu-plate').on('click', function(e){
+    e.stopPropagation();
+  });
+  // $('.menu-close, .header .menu-svg, .menu-overlay').on('click', function(){
+  //   $('html').toggleClass('menu-open');
+  // });
+  $('.menu-close, .header .menu-svg').on('click', function(){
+    $('html').toggleClass('menu-open');
+  });  
+  $('.menu-overlay').on('click', function(){
+    if($('html').hasClass('menu-open')){
+      $('html').toggleClass('menu-open');
+    }
+  });  
+}
+</script>
+
+
+<!-- 主選單內 左右slide -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="vendors/css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        swipe: false, /* 20171002- 手機上關掉左右滑換頁 */
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      /* 20171002- slider menu scroll to top - start */
+      $('.regular').on('afterChange', function(event, slick, currentSlide, nextSlide){
+          // $('.slick-list').stop().animate({scrollTop:0},100);
+          $('.slick-list').scrollTop(0);
+      });
+      /* 20171002- slider menu scroll to top - end */
+
+    });
+  </script>
+
+
+<script type="text/javascript">
+        function showForm() {
+      $('.overlay').addClass('active');
+      $('.slideUpForm').addClass('active');
+    }
+
+    function hideForm() {
+      $('.slideUpForm').removeClass('active');
+      $('.overlay').removeClass('active');
+      
+    }
+
+    $('.showForm').click(function () {
+      showForm();
+    });
+
+    $('.close').click(function () {
+      hideForm();
+    });
+</script>

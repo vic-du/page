@@ -1,0 +1,288 @@
+/* ============================================================ */
+/* Small tablet to big tablet: from 769px to 1024px */
+/* ============================================================ */
+@media only screen and (max-width: 1024px) {
+    
+    /* ----- 小項目的分段註解 ----- */
+    
+}
+
+
+/* ============================================================ */
+/* Small phones to small tablets: from 601px to 768px */
+/* ============================================================ */
+@media only screen and (max-width: 768px) {
+    
+    /* ----- 小項目的分段註解 ----- */
+    
+}
+
+
+/* ============================================================ */
+/* Small phones: from 481 to 600px */
+/* ============================================================ */
+@media only screen and (max-width: 600px) {
+    
+    /* ----- 小項目的分段註解 ----- */
+    
+}
+
+
+/* ============================================================ */
+/* Small phones: from 0 to 480px */
+/* ============================================================ */
+@media only screen and (max-width: 480px) {
+    
+    
+    .header-logo{
+      width: calc(100% - 88px);
+      text-align: center;
+    }
+    .header-logo img {
+      max-width: 260px;
+      width: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+    }
+    .nav--title{ display: none; }
+    .nav--list { width: 100%;  display: none;}
+    .photo img { width: 100%; }
+    .name span { width: 70%; }
+    .name img {
+      float: right;
+      margin-right: 10px;
+    }
+    .mylocation{ display: none; }
+
+    /* ----- 主要內容 摘要 ----- */
+    .mobile-summary {
+      display: block;
+      width: 100%;
+      height: 64px;
+      position: absolute;
+      bottom: 0;
+      padding-top: 10px;
+      z-index: 776;
+      background: #F9F7F3;
+    }
+    .summary-main{
+      width: calc(100% - 40px);
+      float: left;
+    }
+    .summary-main span{
+      width: calc(100% - 84px);
+      /*height: 42px;*/
+      overflow: hidden;
+      font-family: "微軟正黑體", sans-serif;
+      font-size: 18px;
+      color: #28010C;
+      font-weight: 600;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .summary-main img{ 
+      width: 44px;
+      float: right;
+      margin-right: 20px;
+    }
+    .summary-back{
+      width: 40px;
+      height: 42px;
+      float: left;
+      display: block;
+      font-family: 'Cabin Condensed', sans-serif;
+      font-size: 32px;
+      color: #28010C;
+      font-weight: 600;
+      line-height: 15px;/*22px*/
+      text-align: center;
+      cursor: pointer;
+    }
+    .summary-noback { 
+      width: 97.5%;
+      margin-left: 10px;
+    }
+
+    /* ----- 主要內容 ----- */
+    .main-content{ width: 100%; }
+    .nav--list { max-width: 100%;}
+    .menu-overlay .menu-open { 
+      width: 100%;
+      box-shadow: none;
+    }
+    html.menu-open .menu-plate { width: 100%; }
+
+    .menu-close { line-height: 41px; }
+    .menu-close svg{
+      top: 0px;
+      left: 13px;
+    }
+
+    .tribe-sent { padding-right:1%; }
+    
+    /* ----- 關於iStop ----- */
+    .about-share .kv_line img { width: 32px; }
+    .about-share img { margin:3%;}
+    .about-share p img { width: 90%;}
+
+
+    /* ----- google map ----- */
+    .googlemap { height: calc(100% - 104px); }
+    .map-plusminus{ display: none; }
+    .mobile-mylocation{
+      display: block;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      z-index: 666;
+    }
+    .mobile-mylocation img { width: 44px; }
+    .gps-close{ 
+      width: 100%;
+      left: 0%;
+      margin-left: 0px; 
+    }
+    .gps-left{ padding-left: 3%; }
+
+    .slick-dots{
+      width: 100% !important;
+      height: 30px;
+      bottom: -2px!important;/*-33px*/
+      left:0 !important;
+      text-align: center;
+    }
+    .slick-prev {
+        left: 25% !important;
+        bottom: -14px !important;/*-44px*/
+      }
+    .slick-next {
+        right: 25% !important;
+        bottom: -14px !important;/*-44px*/
+    }
+
+}
+
+/* ============================================================ */
+/* 調整4吋手機，橫向時的畫面 */
+/* ============================================================ */
+@media only screen and (max-height: 480px) and (orientation:landscape) {
+    
+    .nav--title{ display: none; }
+    .nav--list { width: 100%; display: none; }
+    .photo img { width: 100%; }
+    .name span { width: 70%; }
+    .name img {
+      float: right;
+      margin-right: 10px;
+    }
+    .field{
+      min-height: 0;
+      background: url("../../resources/img/bg-main-cloud.png") no-repeat 0% 0%;
+      background-size: 100% auto;
+    }
+    .mylocation{ display: none; }
+
+    /* ----- 主要內容 摘要 ----- */
+    .mobile-summary {
+      display: block;
+      width: 100%;
+      height: 64px;
+      position: absolute;
+      bottom: 0;
+      padding-top: 10px;
+      z-index: 999;
+      background: #F9F7F3;
+    }
+    .summary-main{
+      width: calc(100% - 40px);
+      float: left;
+    }
+    .summary-main span{
+      width: calc(100% - 84px);
+      /*height: 42px;*/
+      overflow: hidden;
+      font-family: "微軟正黑體", sans-serif;
+      font-size: 18px;
+      color: #28010C;
+      font-weight: 600;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .summary-main img{ 
+      width: 44px;
+      float: right;
+      margin-right: 20px;
+    }
+    .summary-back{
+      width: 40px;
+      height: 42px;
+      float: left;
+      display: block;
+      font-family: 'Cabin Condensed', sans-serif;
+      font-size: 32px;
+      color: #28010C;
+      font-weight: 600;
+      line-height: 15px;/*22px*/
+      text-align: center;
+      cursor: pointer;
+    }
+    .summary-noback { 
+      width: 99%;
+      margin-left: 10px;
+    }
+    
+    /* ----- 主要內容 ----- */
+    .main-content{ width: 100%; }
+    .nav--list { max-width: 100%; width: 100%;}
+    .menu-overlay .menu-open {
+      position: relative;
+      width: 100%;
+      left:  -400px;
+      box-shadow: none;
+    }
+    html.menu-open .menu-plate { width: 100%; }
+
+    .menu-close svg{
+      top: -1px;
+      left: 13px;
+    }
+
+    .tribe-sent { padding-right: 1%; }
+
+    /* ----- google map ----- */
+    .googlemap { height: calc(100% - 104px); }
+    .map-plusminus{ display: none; }
+    .mobile-mylocation{
+      display: block;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      z-index: 666;
+    }
+    .mobile-mylocation img { width: 44px; }
+
+.station-select { width: 94%; }
+
+
+
+.slick-dots{
+  width: 100% !important;
+  height: 30px;
+  bottom: -2px!important;/*-33px*/
+  left:0 !important;
+  text-align: center;
+}
+.slick-prev {
+    left: 35% !important;
+    bottom: -14px !important;/*-44px*/
+  }
+.slick-next {
+    right: 35% !important;
+    bottom: -14px !important;/*-44px*/
+}
+
+
+}
